@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moonshot | Plant-powered sparkling energy | Made in Pune</title>
+  <meta name="description" content="Moonshot is a sparkling energy drink powered by green coffee and green tea. 80 mg plant caffeine, 5 g sugar, no crash. Alphonso Mango, Jamun & Black Salt, Guava & Chilli and Nimbu Mint." />
+  <meta name="theme-color" content="#2a1d5c" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="vendor/fonts/InterTight.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="src/fonts.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script type="importmap">{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }</script>
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script type="module" src="src/main.js"></script>
+</head>
+<body class="template-index toHomePage" data-flavour="mango">
+  <div id="chrome-top"></div>
+
+  <main id="MainContent">
+    <div class="minHeight">
+
+      <!-- HERO: 3D can + flavour wheel -->
+      <section class="c-HomeHero">
+        <section class="c-HomeHero-fond">
+          <h1 class="sr-only">Moonshot: plant-powered sparkling energy</h1>
+          <section class="c-HomeHero--part1 r">
+            <div class="innerCercle f lotties" aria-hidden="true"></div>
+            <div class="mainCanvas f flex flexCe"><svg class="bulles" viewBox="0 0 200 400" aria-hidden="true"></svg></div>
+            <div class="slider-navigation flex flexFe flexJCe">
+              <div class="flex r flexSb flexCe">
+                <button class="btnRond r heroPrev bounce" type="button" aria-label="Previous flavour"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+                <div class="innerBtn"></div>
+                <button class="btnRond r heroNext bounce" type="button" aria-label="Next flavour"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              </div>
+            </div>
+          </section>
+
+          <div class="margeNeg negativ">
+            <div class="sectionCercle sectionCercleH h100 r">
+              <svg class="arc a" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true"><path d="M0 180C240 20 520 0 720 0s480 20 720 180Z" /></svg>
+              <div class="innerCercle innerCercleCartes innerCercleH a">
+                <div class="cercle a">
+                  <div class="etape h100 flex flexCe flexJCe etapeText">
+                    <div>
+                      <h2>Moonshot? Green coffee?<br />What are we talking about?</h2>
+                      <p class="h5">(let's keep it real)</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- benefit cards injected -->
+                <div class="cercle a cercleSpe">
+                  <div class="etape etapeSpe h100 flex flexCe flexJCe r">
+                    <svg class="curved" viewBox="0 0 1600 700" aria-label="Only the good stuff">
+                      <defs><path id="arcText" d="M80 620C300 160 1300 160 1520 620" /></defs>
+                      <text><textPath href="#arcText" startOffset="50%" text-anchor="middle">ONLY THE GOOD STUFF</textPath></text>
+                    </svg>
+                    <svg class="allBulles a" viewBox="0 0 1400 400" aria-hidden="true"></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="offCanvas"></div>
+      </section>
+
+      <!-- two-up images -->
+      <section class="c-imagesDuo">
+        <div class="imgDuo r">
+          <div class="parallax flex">
+            <div class="duo duo1"></div>
+            <div class="duo duo2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLAVOURS -->
+      <section class="c-wordParagraph negativ">
+        <section class="c-HomeHero--part3">
+          <div class="innerEtoiles r">
+            <h2 class="grosTitre grosTitreSpe rainbow" aria-label="Flavours"><span class="mot">FLAVOURS</span></h2>
+            <div class="parallaxEtoile"></div>
+          </div>
+          <div class="wrap">
+            <p class="petitTexte">Fresh, fizzy, a little masala, all fruit. Wake up your taste buds.</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- product slider -->
+      <section class="c-productsSlider" id="products">
+        <div class="innerSlider">
+          <div class="wrap flex flexSb flexCe r infosProducts negativ">
+            <div class="nav nav-mobile flex">
+              <button class="btn btnRond2 toPrevSlide bounce r" type="button" aria-label="Previous"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              <button class="btn btnRond2 toNextSlide bounce r" type="button" aria-label="Next"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+            </div>
+            <h2 class="produitsReco a">Recommended products</h2>
+            <a class="btn btn60 voirTout bounce" href="#products"><span class="elBounce elBounceNoir flex">See all our products</span></a>
+          </div>
+          <div class="productSlider r">
+            <div class="nav nav-desktop flex">
+              <button class="btn btnRond2 toPrevSlide bounce r" type="button" aria-label="Previous"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              <button class="btn btnRond2 toNextSlide bounce r" type="button" aria-label="Next"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+            </div>
+            <div class="track flex"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe -->
+      <section class="c-newsletterSubscribe negativ" id="subscribe">
+        <div class="r">
+          <svg class="path1" viewBox="0 0 1400 420" aria-hidden="true">
+            <defs><path id="wavePath" d="M-40 300C200 80 420 80 700 220S1180 380 1440 120" /></defs>
+            <text><textPath href="#wavePath" startOffset="0">STAY UP LATE · STAY UP LATE · STAY UP LATE</textPath></text>
+          </svg>
+          <p class="inscrisToi">Sign up for automatic delivery* and save 15%.</p>
+          <div class="flex flexJCe">
+            <a href="#subscribe" class="btn btnOmbre r current toSubscribe"><span>Subscribe</span></a>
+          </div>
+          <div class="innerFleur a flex flexCe flexJCe">
+            <div class="fleurArt"></div>
+            <p class="a">We've got<br />what<br />you need</p>
+          </div>
+          <div class="lottieFusee"></div>
+          <small class="details a">* We don't deliver to the moon yet. ISRO, call us.</small>
+          <svg class="arrondi" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C240 10 520 0 720 0s480 10 720 90Z" fill="#2a1d5c" /></svg>
+        </div>
+      </section>
+
+      <!-- instagram -->
+      <section class="c-instagramPush">
+        <div class="innerInsta r">
+          <div class="pushInsta a pushInsta0"></div>
+          <div class="pushInsta a pushInsta1"></div>
+          <div class="pushInsta a pushInsta2"></div>
+          <div class="pushInsta a pushInsta3"></div>
+          <div class="flex flexJCe datasInsta">
+            <div>
+              <p class="h5">@moonshot.fuel</p>
+              <h2 class="h2">For a dose of energy in your feed.</h2>
+              <div>
+                <a class="btn btnOmbre btnRond3 r" href="#instagram" aria-label="Instagram"><span class="flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="26"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8" /><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" /><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" /></svg></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="arrondi arrondiBas" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440C1200 80 920 90 720 90S240 80 0 0Z" fill="#2a1d5c" /></svg>
+      </section>
+    </div>
+  </main>
+
+  <div id="chrome-bottom"></div>
+</body>
+</html>

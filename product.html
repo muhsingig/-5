@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moonshot | Shop</title>
+  <meta name="theme-color" content="#0d0b21" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="vendor/fonts/InterTight.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="src/fonts.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script type="importmap">{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }</script>
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script type="module" src="src/product.js"></script>
+</head>
+<body class="template-product" data-flavour="mango">
+  <div id="chrome-top"></div>
+
+  <main id="MainContent">
+    <div class="minHeight">
+      <section class="negativ">
+        <section class="wrap heroProduct">
+          <div class="flex flexSb">
+            <div class="gauche r">
+              <div class="innerGauche a"><div class="lesImgs r"></div></div>
+              <svg class="svgMask" aria-hidden="true"><clipPath id="svgMask" clipPathUnits="objectBoundingBox"><circle r="0" /><circle r="0" /><circle r="0" /></clipPath></svg>
+              <div class="navSlider flex flexSb a">
+                <button class="btnRond r produitPrev bounce" type="button" aria-label="Previous photo"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+                <button class="btnRond r produitNext bounce" type="button" aria-label="Next photo"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              </div>
+              <div class="outer" aria-hidden="true">
+                <svg viewBox="0 0 120 120"><defs><path id="ringPath" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" /></defs><circle cx="60" cy="60" r="58" fill="var(--hero)" stroke="var(--ink)" stroke-width="1" /><text><textPath href="#ringPath">PLANT-POWERED · SPARKLING · ENERGY · </textPath></text><path d="M60 42 50 62h8l-3 16 14-22h-8l4-14Z" fill="var(--ink)" /></svg>
+              </div>
+            </div>
+            <div class="droite petitTexte2">
+              <h1 class="titreProduit pName"></h1>
+              <div class="flex flexJCe prix_detail"><span class="detail pPrice"></span><span>Sparkling energy</span></div>
+              <div class="description"><p class="pNotes"></p></div>
+              <form id="AddToCartForm" onsubmit="return false">
+                <div class="innerLignes">
+                  <div class="ligne ligne1 flex">
+                    <div class="w50 bRight r">
+                      <select id="Product" aria-label="Pack size"><option value="12">12 cans</option><option value="24">24 cans</option></select>
+                      <span class="i_ i_chevron"><svg viewBox="0 0 24 24"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.6" /></svg></span>
+                    </div>
+                    <div class="w50 r">
+                      <button type="button" class="i_ i_moins" aria-label="Fewer"><svg viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="1.6" /></svg></button>
+                      <input id="Quantity" type="number" min="1" value="1" aria-label="Quantity" readonly />
+                      <button type="button" class="i_ i_plus" aria-label="More"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.6" /></svg></button>
+                    </div>
+                  </div>
+                  <div class="ligne ligne2 flex recurringOptions">
+                    <div class="radio w50 bRight flex flexCe toRegular" checked role="radio" tabindex="0">Single order</div>
+                    <div class="radio w50 flex flexCe toAbonnement" role="radio" tabindex="0">Subscribe and save 15%</div>
+                  </div>
+                  <div class="ligne ligne2 flex ligneAbonnement">
+                    <div class="radio w50 bRight flex flexCe typeAbonnement" checked role="radio" tabindex="0">Every 2 weeks</div>
+                    <div class="radio w50 flex flexCe typeAbonnement" role="radio" tabindex="0">Once a month</div>
+                  </div>
+                  <button class="btn btnOmbre btnOmbre60 r" type="submit" id="AddToCart"><span>Add to cart</span></button>
+                  <ul class="carac flex flexSb"></ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="wrap descrLong">
+          <p class="pLong"></p>
+          <ul class="carac2 flex flexSb petitTexte"></ul>
+        </section>
+
+        <section class="wrap flex flexSb sectionWebgl">
+          <div class="gauche innerCanvasP r"><img data-shot="back" alt="Back of the can with ingredients and nutrition" /></div>
+          <div class="droite">
+            <h2 class="petitTexte">Daily value</h2>
+            <ul class="petitTexte2 nutri"></ul>
+          </div>
+        </section>
+
+        <div class="flex flexCe flexJCe queDuBon">
+          <div class="innerEtoiles r">
+            <svg class="curved" viewBox="0 0 1600 700" aria-label="Only the good stuff"><defs><path id="arcText2" d="M80 620C300 160 1300 160 1520 620" /></defs><text><textPath href="#arcText2" startOffset="50%" text-anchor="middle">ONLY THE GOOD STUFF</textPath></text></svg>
+            <svg class="bulleSvg" viewBox="0 0 1600 700" aria-hidden="true"></svg>
+            <div class="parallaxEtoile"></div>
+          </div>
+        </div>
+
+        <div class="sectionCercle sectionCercleProd h100 r">
+          <div class="mainCanvas flex"></div>
+          <button class="btn btnRond2 toPrevCarte bounce" type="button" aria-label="Previous card"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+          <button class="btn btnRond2 toNextCarte bounce" type="button" aria-label="Next card"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+          <div class="innerCercle innerCercleCartes innerCercleCP a"></div>
+        </div>
+      </section>
+
+      <section class="c-productsSlider" id="products">
+        <div class="innerSlider">
+          <div class="wrap flex flexSb flexCe r infosProducts negativ">
+            <div class="nav nav-mobile flex">
+              <button class="btn btnRond2 toPrevSlide bounce r" type="button" aria-label="Previous"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              <button class="btn btnRond2 toNextSlide bounce r" type="button" aria-label="Next"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+            </div>
+            <h2 class="produitsReco a">Recommended products</h2>
+            <a class="btn btn60 voirTout bounce" href="index.html#products"><span class="elBounce elBounceNoir flex">See all our products</span></a>
+          </div>
+          <div class="productSlider r">
+            <div class="nav nav-desktop flex">
+              <button class="btn btnRond2 toPrevSlide bounce r" type="button" aria-label="Previous"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+              <button class="btn btnRond2 toNextSlide bounce r" type="button" aria-label="Next"><span class="elBounce flex flexCe flexJCe"><svg viewBox="0 0 24 24" width="22"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" /></svg></span></button>
+            </div>
+            <div class="track flex"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="chrome-bottom"></div>
+</body>
+</html>
